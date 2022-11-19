@@ -1,0 +1,23 @@
+var line = $("#line2");
+let scrollBottom = Math.round($(document).height() - $(window).height() - $(window).scrollTop());
+if (scrollBottom > 0.281096276 * $(window).width()) {
+    scrollBottom = 0.281096276 * $(window).width();
+}
+
+let lineWidth = Math.round(((0.281096276 * $(window).width() - scrollBottom) / (0.281096276 * $(window).width())) * 80);
+line.css("width", `${lineWidth}vw`);
+if (lineWidth >= 0) {
+    $("#word1").addClass("shown");
+} else {
+    $("#word1").removeClass("shown");
+}
+if (lineWidth >= 40) {
+    $("#word2").addClass("shown");
+} else {
+    $("#word2").removeClass("shown");
+}
+if (lineWidth >= 78) {
+    $("#word3").addClass("shown");
+} else {
+    $("#word3").removeClass("shown");
+}

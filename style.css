@@ -1,0 +1,271 @@
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+* {
+    font-family: 'Helvetica Neue', Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Tahoma, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+*:not(ul, ol, li, dl, dd, dt) {
+    margin: 0;
+    padding: 0;
+}
+
+*:not(html) {
+    overflow-y: hidden;
+}
+
+a:not(.nostyle) {
+    color: #4040ff;
+    text-decoration: none;
+}
+
+a:not(.nostyle):hover {
+    color: #8080ff;
+    text-decoration: underline;
+}
+
+a:not(.nostyle):active {
+    color: #ff8080;
+}
+
+.page.homepage {
+    display: block;
+    width: 100vw;
+    max-width: 100vw;
+    height: 56.2192552vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page.homepage#page1 {
+    background-image: url("./img/websiteImages1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.page.homepage#page1.scrolled {
+    background-image: url("./img/websiteImages2.jpg") !important;
+}
+
+#line1 {
+    font-size: 3vw;
+    background-color: #fff;
+    height: 5px;
+    width: 30vw;
+    position: relative;
+    margin: 0 10vw;
+    top: calc(50vh - 6ch);
+}
+
+#word1, #word2, #word3 {
+    text-align: center;
+    width: fit-content;
+    color: #fff;
+    font-size: 3vw;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#word1:not(.scrolled), #word2:not(.scrolled), #word3:not(.scrolled) {
+    opacity: 0;
+}
+
+#word1 {
+    top: calc(50vh - 0.7ch);
+    left: 10vw;
+}
+
+#word2 {
+    top: calc(60vh - 2ch);
+    width: 30vw;
+    left: 35vw;
+}
+
+#page2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1pc;
+}
+
+#word3 {
+    top: calc(50vh - 6.7ch);
+    left: calc(90vw - 7ch);
+}
+
+#page3 {
+    display: grid;
+    height: 64vw;
+    grid-template-columns: 1fr calc(44.4319776vw + 2px) 1fr;
+    grid-template-rows: 8vw 40vw 16vw;
+    background-color: #eef8f8;
+}
+
+#page3 .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#page3 .empty1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#page3 .imageSpot {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #ffffff;
+}
+
+#page3 .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    border-top: 1px solid #000;
+}
+
+#page3 .empty2 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#homepages {
+    position: relative;
+    margin-bottom: 28.1096276vh;
+}
+
+.loading {
+    width: 10vw !important;
+    margin-bottom: 3pc;
+}
+
+.loading.started {
+    animation: rotate linear 3s infinite;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(250, 246, 224);
+}
+
+#page2 .img {
+    cursor: move;
+}
+
+.page .header, .page .subheading {
+    text-align: center;
+}
+
+.imageSpot {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.img.dumpling-left {
+    background-image: url("img/dumpling.png");
+    height: 40vw;
+    width: 44.4319776vw;
+    background-size: contain;
+    position: absolute;
+    left: 1pc;
+    top: calc(100vh + 15px);
+}
+
+.img.dumpling-left:hover {
+    background-image: url("img/dumpling\ recipe.png");
+}
+
+.img.pork-right {
+    background-image: url("img/pork.png");
+    height: 40vw;
+    width: 44.4319776vw;
+    background-size: contain;
+    position: absolute;
+    right: 1pc;
+    top: calc(100vh + 15px);
+}
+
+.img.pork-right:hover {
+    background-image: url("img/pork\ recipe.png");
+}
+
+.img:active {
+    filter: brightness(50%);
+}
+
+#dumplingChoice, #porkChoice {
+    display: none;
+}
+
+.back {
+    cursor: pointer;
+    margin: 2pc;
+    background-color: #0a0a23;
+    color: #fff;
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.back:hover {
+    background-color: #2040ff;
+}
+
+.back:active {
+    background-color: #ff4020;
+}
+
+ul li a:not(.nostyle) {
+    color: #0000bf;
+    padding: 1pc 2pc 1pc 0;
+}
+
+ul li a:not(.nostyle):hover {
+    color: #4040ff;
+}
+
+ul li {
+    background-color: #afafff;
+    margin-bottom: 1pc;
+    width: 100vw;
+    padding: 2pc;
+}
+
+ul li:nth-child(even) {
+    background-color: #bfbfff;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
