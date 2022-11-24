@@ -209,7 +209,7 @@ a:active {
 }
 
 #dumplingContainer > *:not(img) {
-    background-color: #fff;
+    background-color: #fff9;
     padding: 1pc;
 }
 
@@ -248,7 +248,7 @@ a:active {
 }
 
 #porkContainer > *:not(img) {
-    background-color: #fff;
+    background-color: #fff9;
     padding: 1pc;
 }
 
