@@ -101,9 +101,9 @@ $(document).ready(function() {
             pos4 = e.clientY;
             var top = elmnt.offsetTop - pos2;
             var left = elmnt.offsetLeft - pos1;
-            if (top > ($(window).height() + 17 + 0.55 * $(window).width()) && left > (0.235 * $(window).width() - 9)) {
-                top = $(window).height() + 17 + 0.636 * $(window).width();
-                left = 0.283 * $(window).width() - 1;
+            if (top > ($(window).height() + 17 + 0.636 * $(window).width()) && left > (0.314235624 * $(window).width()) && left < (0.685764376 * $(window).width())) {
+                top = $(window).height() + 17 + 0.686 * $(window).width();
+                left = 0.364235624 * $(window).width();
                 setTimeout(() => {chooseDumpling();}, 750);
                 chosenChoice = true;
             }
@@ -140,9 +140,9 @@ $(document).ready(function() {
             pos4 = e.clientY;
             var top = elmnt.offsetTop - pos2;
             var left = elmnt.offsetLeft - pos1;
-            if (top > ($(window).height() + 17 + 0.586 * $(window).width()) && left > (0.233 * $(window).width() - 1)) {
-                top = $(window).height() + 17 + 0.636 * $(window).width();
-                left = 0.283 * $(window).width() - 1;
+            if (top > ($(window).height() + 17 + 0.636 * $(window).width()) && left > (0.314235624 * $(window).width()) && left < (0.685764376 * $(window).width())) {
+                top = $(window).height() + 17 + 0.686 * $(window).width();
+                left = 0.364235624 * $(window).width();
                 setTimeout(() => {choosePork();}, 750);
                 chosenChoice = true;
             }
@@ -175,12 +175,12 @@ $(document).ready(function() {
                             document.querySelector(".loading").src = "img/pancake5.png";
                             document.querySelector("#pancakeNameLoading").innerHTML = "Nale\u015bniki- Poland";
                             $("#loading").css("display", "none");
-                            $("#dumplingChoice").css("display", "block")
-                        }, 1200);
-                    }, 1200);
-                }, 1200);
-            }, 1200);
-        }, 1200);
+                            $("#dumplingChoice").css("display", "block");
+                        }, 800);
+                    }, 800);
+                }, 800);
+            }, 800);
+        }, 800);
     }
 
     function choosePork() {
@@ -201,16 +201,43 @@ $(document).ready(function() {
                         document.querySelector("#pancakeNameLoading").innerHTML = "Nale\u015bniki- Poland";
                         setTimeout(() => {
                             $("#loading").css("display", "none");
-                            $("#porkChoice").css("display", "block")
-                        }, 1200);
-                    }, 1200);
-                }, 1200);
-            }, 1200);
-        }, 1200);
+                            $("#porkChoice").css("display", "block");
+                        }, 800);
+                    }, 800);
+                }, 800);
+            }, 800);
+        }, 800);
     }
 
-    function load() {
-    }
+    $("#fillingClick").click(function() {
+        $("#filling").addClass("chosen");
+        $("#pinching").removeClass("chosen");
+    });
+
+    $("#pinchingClick").click(function() {
+        $("#filling").removeClass("chosen");
+        $("#pinching").addClass("chosen");
+    });
+
+
+
+    $("#poundingClick").click(function() {
+        $("#pounding").addClass("chosen");
+        $("#dipping").removeClass("chosen");
+        $("#frying").removeClass("chosen");
+    });
+
+    $("#dippingClick").click(function() {
+        $("#pounding").removeClass("chosen");
+        $("#dipping").addClass("chosen");
+        $("#frying").removeClass("chosen");
+    });
+
+    $("#fryingClick").click(function() {
+        $("#pounding").removeClass("chosen");
+        $("#dipping").removeClass("chosen");
+        $("#frying").addClass("chosen");
+    });
 });
 
 function brighten(element, amountInPercent) {

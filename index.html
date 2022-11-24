@@ -20,22 +20,7 @@
                 <div class="img dumpling-left"></div>
                 <div class="img pork-right"></div>
             </div>
-            <div class="page homepage" id="page3">
-                <div class="head">
-                    <h1 class="header">RECIPE TRACKER</h1>
-                    <h3 class="subheading">TRY IT FOR YOURSELF</h3>
-                </div>
-                <div class="imageSpot">
-                    
-                </div>
-                <div class="empty1">
-
-                </div>
-                <h4 class="text">Drag recipe into recipe tracker to find related recipes</h4>
-                <div class="empty2">
-
-                </div>
-            </div>
+            <img src="img/page3.png" class="fullWidth" alt="">
         </div>
         <div class="page" id="loading">
             <img src="img/pancake1.png" class="rotate loading" />
@@ -43,33 +28,88 @@
         </div>
         <div id="dumplingChoice">
             <button class="back">back</button>
-            <ul>
-                <li>Pie Crust - <a class="textToHref">https://www.inspiredtaste.net/22662/flaky-pie-crust-recipe/</a></li>
-                <li>Empanada - <a class="textToHref">https://cooking.nytimes.com/recipes/1014844-beef-empanadas</a></li>
-                <li>Salte&#xf1;a - <a class="textToHref">https://www.thespruceeats.com/bolivian-style-beef-empanadas-3029698</a></li>
-                <li>Turnover - <a class="textToHref">https://sallysbakingaddiction.com/berry-turnovers/</a></li>
-                <li>Jamacian Patty - <a class="textToHref">https://www.butterbeready.com/jamaican-beef-patties/</a></li>
-                <li>Cornish Pasty - <a class="textToHref">https://www.thespruceeats.com/traditional-cornish-pasty-recipe-435042</a></li>
-                <li>Yomari - <a class="textToHref">https://recipebook.io/home/recipedetails/rbk_5ba79ee6ba79b/yomari-a-traditional-newari-dish</a></li>
-                <li>Ravioli - <a class="textToHref">https://www.foodandwine.com/recipes/easy-ravioli</a></li>
-                <li>Pelmeni - <a class="textToHref">https://momsdish.com/recipe/76/pelmeni</a></li>
-                <li>Gyoza - <a class="textToHref">https://www.justonecookbook.com/gyoza/</a></li>
-                <li>Manti - <a class="textToHref">https://www.allrecipes.com/recipe/154920/homemade-manti-traditional-turkish-dumplings/</a></li>
-                <li>Kozhukkatta - <a class="textToHref">https://www.vegrecipesofindia.com/kozhukattai-recipe/</a></li>
-                <li>Wonton - <a class="textToHref">https://www.madewithlau.com/recipes/wontons</a></li>
-            </ul>
+            <div id="dumplingContainer">
+                <div class="recipe">
+                    1. Take a dumpling wrapper and place it on the palm of your hand.<br />
+                    <br />
+                    2. Place a tablespoon of <span class="recipePart" id="fillingClick">filling into the centre of the wrapper</span> - you want it to be full but not so much that it oozes out.<br />
+                    <br />
+                    3. Fold the wrapper over and pinch the edges together.<br />
+                    <br />
+                    4. Place the dumpling flat on the table with the pinched edges facing up, and flatten the bottom slightly. Now <span class="recipePart" id="pinchingClick">pinch a few pleats</span> into the dumpling to create a pouch.<br />
+                    <br />
+                    (<a class="textToHref">https://mamalovestocook.com/chinese-dumplings-recipe/</a>)
+                </div>
+                <div class="similarRecipes">
+                    <ul class="similarRecipeChoice" id="filling">
+                        <li>Yomari - <a class="textToHref">https://recipebook.io/home/recipedetails/rbk_5ba79ee6ba79b/yomari-a-traditional-newari-dish</a></li>
+                        <li>Ravioli - <a class="textToHref">https://www.foodandwine.com/recipes/easy-ravioli</a></li>
+                        <li>Pelmeni - <a class="textToHref">https://momsdish.com/recipe/76/pelmeni</a></li>
+                        <li>Gyoza - <a class="textToHref">https://www.justonecookbook.com/gyoza/</a></li>
+                        <li>Manti - <a class="textToHref">https://www.allrecipes.com/recipe/154920/homemade-manti-traditional-turkish-dumplings/</a></li>
+                        <li>Kozhukkatta - <a class="textToHref">https://www.vegrecipesofindia.com/kozhukattai-recipe/</a></li>
+                        <li>Wonton - <a class="textToHref">https://www.madewithlau.com/recipes/wontons</a></li>
+                    </ul>
+                    <ul class="similarRecipeChoice" id="pinching">
+                        <li>Pie Crust - <a class="textToHref">https://www.inspiredtaste.net/22662/flaky-pie-crust-recipe/</a></li>
+                        <li>Empanada - <a class="textToHref">https://cooking.nytimes.com/recipes/1014844-beef-empanadas</a></li>
+                        <li>Salte&#xf1;a - <a class="textToHref">https://www.thespruceeats.com/bolivian-style-beef-empanadas-3029698</a></li>
+                        <li>Turnover - <a class="textToHref">https://sallysbakingaddiction.com/berry-turnovers/</a></li>
+                        <li>Jamacian Patty - <a class="textToHref">https://www.butterbeready.com/jamaican-beef-patties/</a></li>
+                        <li>Cornish Pasty - <a class="textToHref">https://www.thespruceeats.com/traditional-cornish-pasty-recipe-435042</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="porkChoice">
             <button class="back">back</button>
-            <ul>
-                <li>Tonkatsu - <a class="textToHref">https://www.justonecookbook.com/tonkatsu/</a></li>
-                <li>Czech Fried Cheese - <a class="textToHref">https://www.thespruceeats.com/czech-fried-cheese-recipe-1136393</a></li>
-                <li>Escalope - <a class="textToHref">https://www.thespruceeats.com/czech-fried-cheese-recipe-1136393</a></li>
-                <li>Asian Chicken Sweet - <a class="textToHref">https://sallysbakingaddiction.com/berry-turnovers/</a></li>
-                <li>Pakoras - <a class="textToHref">https://www.butterbeready.com/jamaican-beef-patties/</a></li>
-                <li>Corn Dogs - <a class="textToHref">https://www.allrecipes.com/recipe/35149/corn-dogs/</a></li>
-                <li>Empanada - <a class="textToHref">https://cooking.nytimes.com/recipes/1014844-beef-empanadas</a></li>
-            </ul>
+            <div id="porkContainer">
+                <div class="recipe">
+                    1. Place the pork chops between two sheets of plastic wrap and <span class="recipePart" id="poundingClick">pound them until just 1/4 inch thick with the flat side of a meat tenderizer. </span>Lightly season both sides with salt and freshly ground black pepper.<br />
+                    <br />
+                    2. Place the flour mixture, egg, and breadcrumbs in 3 separate shallow bowls. <span class="recipePart" id="dippingClick">Dip the chops in the flour, the egg, and the breadcrumbs, coating both sides and all edges at each stage.</span> Be careful not to press the breadcrumbs into the meat. Gently shake off the excess crumbs. Don&#x2019;t let the schnitzel sit in the coating or they will not be as crispy once fried - fry immediately.<br />
+                    <br />
+                    3. Make sure the cooking oil is hot enough at this point (about 330 degrees F) as you don&#x2019;t want the Schnitzel to sit around in the coating before frying. Use enough oil so that the Schnitzels “swim” in it.<br />
+                    <br />
+                    4. <span class="recipePart" id="fryingClick">Fry the Schnitzel for about 2-3 minutes on both sides until a deep golden brown. </span>Transfer briefly to a plate lined with paper towels.<br />
+                    <br />
+                    (<a class="textToHref">https://www.daringgourmet.com/traditional-german-pork-schnitzel/</a>)
+                </div>
+                <div class="similarRecipes">
+                    <ul class="similarRecipeChoice" id="pounding">
+                        <li>Beef Fajita - <a class="textToHref">https://addapinch.com/steak-fajitas-recipe/</a></li>
+                        <li>Tonkatsu - <a class="textToHref">https://www.justonecookbook.com/tonkatsu/</a></li>
+                        <li>Czech Fried Cheese - <a class="textToHref">https://www.thespruceeats.com/czech-fried-cheese-recipe-1136393</a></li>
+                        <li>Escalope - <a class="textToHref">https://www.americangarden.us/en/recipe/chicken-escalope/</a></li>
+                        <li>Chicken Schnitzel - <a class="textToHref">https://toriavey.com/chicken-schnitzel/</a></li>
+                        <li>Mutton Karahi - <a class="textToHref">https://fatimacooks.net/lamb-mutton-karahi-recipe/</a></li>
+                        <li>Beef Jerky - <a class="textToHref">https://www.onceuponachef.com/recipes/the-best-homemade-beef-jerky-recipe.html</a></li>
+                    </ul>
+                    <ul class="similarRecipeChoice" id="dipping">
+                        <li>Corn Dog - <a class="textToHref">https://www.allrecipes.com/recipe/35149/corn-dogs/</a></li>
+                        <li>Czech Fried Cheese - <a class="textToHref">https://www.thespruceeats.com/czech-fried-cheese-recipe-1136393</a></li>
+                        <li>Escalope - <a class="textToHref">https://www.americangarden.us/en/recipe/chicken-escalope/</a></li>
+                        <li>Asia chicken sweet - <a class="textToHref">https://amandacooksandstyles.com/crispy-sweet-and-spicy-asian-chicken/</a></li>
+                        <li>Pakoras - <a class="textToHref">https://www.indianhealthyrecipes.com/pakora-recipe-vegetable-pakora-pakoda/</a></li>
+                        <li>Tonkatsu - <a class="textToHref">https://www.justonecookbook.com/tonkatsu/</a></li>
+                        <li>Southern Fried Chicken - <a class="textToHref">https://www.thespruceeats.com/classic-southern-fried-chicken-3056867</a></li>
+                        <li>Fish Fingers - <a class="textToHref">https://www.recipetineats.com/fish-fingers-recipe/</a></li>
+                    </ul>
+                    <ul class="similarRecipeChoice" id="frying">
+                        <li>Jalapeño Poppers - <a class="textToHref">https://cooking.nytimes.com/recipes/1020843-jalapeno-poppers</a></li>
+                        <li>Paneer Fry - <a class="textToHref">https://www.sharmispassions.com/paneer-fry-recipe/</a></li>
+                        <li>Corn Dog - <a class="textToHref">https://www.allrecipes.com/recipe/35149/corn-dogs/</a></li>
+                        <li>Czech Fried Cheese - <a class="textToHref">https://www.thespruceeats.com/czech-fried-cheese-recipe-1136393</a></li>
+                        <li>Escalope - <a class="textToHref">https://www.americangarden.us/en/recipe/chicken-escalope/</a></li>
+                        <li>Asia chicken sweet - <a class="textToHref">https://amandacooksandstyles.com/crispy-sweet-and-spicy-asian-chicken/</a></li>
+                        <li>Pakoras - <a class="textToHref">https://www.indianhealthyrecipes.com/pakora-recipe-vegetable-pakora-pakoda/</a></li>
+                        <li>Tonkatsu - <a class="textToHref">https://www.justonecookbook.com/tonkatsu/</a></li>
+                        <li>Southern Fried Chicken - <a class="textToHref">https://www.thespruceeats.com/classic-southern-fried-chicken-3056867</a></li>
+                        <li>Fish Fingers - <a class="textToHref">https://www.recipetineats.com/fish-fingers-recipe/</a></li>
+                        <li>Idli Fry - <a class="textToHref">https://vegecravings.com/fried-idli-recipe-masala-idli-fry/</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>
