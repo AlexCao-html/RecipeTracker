@@ -178,24 +178,15 @@ a:active {
 }
 
 .back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     cursor: pointer;
     margin: 2pc;
-    background-color: #0a0a23;
-    color: #fff;
-    border: none; 
-    border-radius: 10px; 
+    border: none;
     padding: 15px;
-    min-height: 30px;
-    min-width: 120px;
-    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.back:hover {
-    background-color: #2040ff;
-}
-
-.back:active {
-    background-color: #ff4020;
+    width: 120px;
+    bottom: -2rem;
 }
 
 #dumplingChoice {
@@ -203,7 +194,7 @@ a:active {
     height: calc(fit-content + 5rem);
     width: 100vw;
     min-height: 100vh;
-    padding: 0 5rem 5rem;
+    padding: 3rem 5rem 5rem;
     background-image: url("./img/background.png");
     background-size: cover;
     background-position: center;
@@ -212,14 +203,20 @@ a:active {
 #dumplingContainer {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 70vh;
+    grid-template-rows: auto 55vh;
     gap: 1pc;
     min-height: 70vh;
 }
 
-#dumplingContainer > * {
+#dumplingContainer > *:not(img) {
     background-color: #fff;
     padding: 1pc;
+}
+
+#dumplingContainer > img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    width: 80vw;
 }
 
 #dumplingContainer ul {
@@ -236,7 +233,7 @@ a:active {
     height: calc(fit-content + 5rem);
     width: 100vw;
     min-height: 100vh;
-    padding: 0 5rem 5rem;
+    padding: 3rem 5rem 5rem;
     background-image: url("./img/background.png");
     background-size: cover;
     background-position: center;
@@ -245,14 +242,20 @@ a:active {
 #porkContainer {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 70vh;
+    grid-template-rows: auto 55vh;
     gap: 1pc;
     min-height: 70vh;
 }
 
-#porkContainer > * {
+#porkContainer > *:not(img) {
     background-color: #fff;
     padding: 1pc;
+}
+
+#porkContainer > img {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    width: 80vw;
 }
 
 #porkContainer ul {
